@@ -1,0 +1,59 @@
+name: sm_erp
+description: Enterprise Resource Planning System for Trading and Manufacturing
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  get: ^4.6.5
+  get_storage: ^2.1.1
+
+  # UI Components
+  cupertino_icons: ^1.0.5
+  fl_chart: ^0.62.0
+  file_picker: ^5.3.2
+  image_picker: ^0.8.9
+  pdf: ^3.10.4
+  printing: ^5.11.0
+  intl: ^0.18.1
+
+  # Network & Data
+  http: ^0.13.6
+  json_annotation: ^4.8.1
+  path_provider: ^2.0.15
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Code Generation
+  build_runner: ^2.4.6
+  json_serializable: ^6.7.1
+
+  # Linting
+  flutter_lints: ^2.0.2
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
